@@ -1,13 +1,256 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+ margin: 0;
+ padding:0;
+box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.Head{
+  background-color: #181817 ;
+  padding:10px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
 }
+.empText{
+  text-align: center;
+  margin-top:2%;
+  margin-bottom: 2%;
+  font-weight: bolder;
+}
+.table-row{
+    width: 80%;
+    margin: auto; 
+    padding: 0px;
+    border: 1px solid rgb(228, 222, 222);
+    margin-bottom: 50px;
+}
+/* table{
+  border-collapse: collapse;
+  
+  width:80%;
+  margin-right:50px;
+} */
+ 
+.InputDe input{
+   width:fit-content;
+   height: 35px;
+   margin: 15px;
+   font-size: 15px;
+   font-weight: 700;
+  }
+  .InputDe button{
+    padding:10px;
+    background: #2f4553;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    text-align: center;
+    color:white ;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .InputDe button:hover{
+    background: #09571F;
+    
+  }
+  
+
+#openForm{
+  font-family: 'Open Sans', sans-serif;
+  width:48%;
+  margin:auto;
+   border-radius: 10px;
+  /* border:1px solid red; */
+  background: #4c8181;
+  /* box-shadow: 5px 8px 25px 2px lightgray; */
+  display: block;
+  /* align-items: center; */
+  text-align: center;
+}
+#openForm .Addtext{
+  font-size: 22px;
+  font-weight:900;
+  display: block;
+  padding-top: 15px;
+}
+
+
+#openForm span .btnX{
+  display: block;
+  padding-top: none;
+  float: right;
+  font-weight: 900;
+  padding:0px 10px;
+    background: #274242;
+    border-radius: 5px;
+    border: none;
+    color:white ;
+    cursor: pointer;
+}
+#openForm span .btnX:hover{
+  background: rgb(79, 107, 88);
+  /* color: black; */
+  cursor: pointer;
+}
+.addEmployy{
+  border:1px solid #ffffff;
+  text-align:left;
+  padding-bottom: 10px;
+  width: 80%;
+  margin: auto;
+}
+ .addEmployy button{
+   padding:10px;
+  background: #195075;
+   border-radius: 5px;
+   border: none;
+   color:white ;
+   cursor: pointer;
+ } 
+ .addEmployy button:hover{
+   background: #10586D;
+   font-weight: 800;
+   letter-spacing: 1px;
+ }
+ tr:nth-child(even){
+   background-color: lightgray ; 
+}
+thead,th{
+  background-color: gray;
+  padding:8px;
+  color: whitesmoke;
+  text-align: left;
+} 
+tr td{
+  padding: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+span .update{
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #10586D;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+span .delete {
+
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #A2333D;
+  margin-right: 12px;
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+span .view{
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #10586D;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+span .save{
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #09571F;
+  margin-right: 12px;
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+span .cancel{
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #9E4A2C;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+#RowInput input{
+  width:fit-content;
+  height: 35px;
+  /* margin: 15px; */
+  font-size: 17px;
+  font-weight: 700; 
+}
+ @media screen and (max-width:800px){
+  #RowInput input
+  {
+    width: 100%;
+    height: 25px;
+    font-size:12px
+  }
+  span .delete {
+   margin: 0;
+    padding: 6px;
+    font-size: 12px;
+      }
+  span .update{
+    padding: 6px;
+    font-size: 12px;
+  }
+  span .view{
+    padding: 6px;
+    font-size: 12px;
+  }
+  .table-row{
+    width: 100%;
+    margin: 0; 
+    padding: 0px;
+}
+.InputDe input{
+  width: 85%;
+  height: 30px;
+    font-size:12px
+ }
+ .addEmployy{
+  padding-bottom: 10px;
+  width: 100%;
+}
+.InputDe button{
+  padding:10px;
+  background: #0a91eb;
+  margin-bottom: 20px;
+}
+tr td{
+  padding: 2px;
+  font-size: 13px;
+}
+th{
+  font-size: 12px;
+}
+#openForm .Addtext{
+  font-size: 16px;
+  font-weight:700;
+ /* display: block; */
+  padding-top: 20px;
+}
+.empText{
+  margin-top:1%;
+  margin-bottom: 1%;
+  font-size: 18px;
+}
+   .Head{
+     font-size: small;
+   }
+   span .save{
+    padding: 6px;
+    font-size: 12px;
+  }
+  span .cancel{
+    padding: 6px;
+    font-size: 12px;
+  }
+ }
